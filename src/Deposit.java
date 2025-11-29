@@ -20,5 +20,21 @@ public class Deposit {
         float valorDepositado = sc.nextFloat();
 
         cliente.setSaldo(cliente.getSaldo() + valorDepositado);
+
+        System.out.println(String.format
+                (
+                        """
+                        ***************** SUCESSO *******************
+                        
+                             O valor de R$ %.2f foi depositado!
+                        
+                        *********************************************   
+                        
+              
+                        """, valorDepositado
+                )
+        );
+
+        Menu.menuShow(cliente);
     }
 }

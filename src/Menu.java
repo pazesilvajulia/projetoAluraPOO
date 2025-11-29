@@ -37,7 +37,7 @@ public class Menu {
                             break;
 
                         case 2:
-
+                            Withdraw.makeWithdraw(cliente);
                             break;
 
                         case 3:
